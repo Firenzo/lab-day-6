@@ -13,7 +13,7 @@
     <h2 class="char__name">{{ $store.state.characters[currentPerson].name }}</h2>
     <div class="char__button-container">
       <button class="char__button-prev" @click="prevPerson()"></button>
-      <NuxtLink class="char__button-start" to="ingang" @click="setCharacter()">Start</NuxtLink>
+      <NuxtLink class="char__button-start" to="ingang">Start</NuxtLink>
       <button class="char__button-next" @click="nextPerson()"></button>
     </div>
   </div>
@@ -50,11 +50,6 @@ export default {
         this.currentPerson += 1;
       }
     },
-
-    setCharacter(){
-      console.log('hoi');
-      this.$store.dispatch('changeChosenCharacter');
-    }
   },
 };
 </script>

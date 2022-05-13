@@ -1,7 +1,6 @@
 <template>
     <div class="overlay">
-      <NuxtLink class="button" to="page3"></NuxtLink>
-      <h1>{{this.$store.state.chosenCharacter}}</h1>
+      <NuxtLink class="button" to="lobby"></NuxtLink>
     </div>
 </template>
 
