@@ -1,6 +1,7 @@
 <template>
     <div class="overlay">
-      <!-- <NuxtLink class="button" to="trap">trap</NuxtLink> -->
+      <img class="char__pic" :src="require(`~/assets/images/characters/${$store.state.characters[$store.state.chosenCharacter].name}.png`)"/>
+      <NuxtLink class="button" to="lobby"></NuxtLink>
     </div>
 </template>
 
@@ -19,6 +20,12 @@ export default {
   z-index: 10;
   position: absolute;
   font-family: sans-serif;
+}
+
+.char__pic {
+  position: relative;
+    top: 510px;
+    left: 340px;
 }
 .button {
   position: relative;
