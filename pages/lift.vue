@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use "styles/main" as *;
 .overlay {
   background: url("../assets/pictures/lift-1.jpg") no-repeat;
