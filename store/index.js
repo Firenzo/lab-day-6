@@ -41,21 +41,21 @@ export const state = () => ({
 })
   
 export const mutations = {
-  SET_CHOSEN_CHARACTER(state, index) {
-    state.chosencharacter = state.characters[index]
+  SET_CHOSEN_CHARACTER(state, {selectedCharacter}) {
+    state.chosenCharacter = selectedCharacter;
   },
 
   SET_CURRENT_OBJECTIVE(state, index) {
-    state.chosencharacter = state.characters[index]
+    state.chosenCharacter = state.characters[index]
   }
 }
   
 export const actions = {
-  changeChosenCharacter (context, index){
-    context.commit('SET_CHOSEN_CHARACTER', index)
+  changeChosenCharacter (context){
+    context.commit('SET_CHOSEN_CHARACTER', {selectedCharacter: 2});
   },
-  changeCurrentObjective (context, currentObjective) {
-    context.commit('SET_CURRENT_OBJECTIVE', currentObjective)
+  changeCurrentObjective (context) {
+    context.commit('SET_CURRENT_OBJECTIVE')
   },
 }
   

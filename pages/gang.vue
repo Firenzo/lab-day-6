@@ -1,9 +1,8 @@
 <template>
     <div class="overlay">
-      <NuxtLink class="up" to="verdieping-2"></NuxtLink>
-      <NuxtLink class="down" to="verdieping-0"></NuxtLink>
+      <NuxtLink class="up" to="Kantine"></NuxtLink>
+      <NuxtLink class="down" to="verdieping-3"></NuxtLink>
     </div>
-  </div>
 </template>
 
 <script>
@@ -38,9 +37,10 @@ export default {
 
 .up {
   position: absolute;
+  transform: rotate(-7deg);
   display: block;
-  top: 200px;
-  left: 100px;
+  top: 600px;
+  left: 280px;
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
@@ -55,9 +55,10 @@ export default {
 
 .down {
   position: absolute;
+  transform: rotate(-7deg);
   display: block;
-  top: 400px;
-  left: 100px;
+  top: 750px;
+  left: 310px;
   width: 0;
   height: 0;
   border-left: 50px solid transparent;

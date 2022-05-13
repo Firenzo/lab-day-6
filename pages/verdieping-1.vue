@@ -4,7 +4,6 @@
       <NuxtLink class="up" to="verdieping-2"></NuxtLink>
       <NuxtLink class="down" to="verdieping-0"></NuxtLink>
     </div>
-  </div>
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 <template>
     <div class="overlay">
-      <!-- <NuxtLink class="button" to="lift">lift</NuxtLink> -->
+      <!-- <NuxtLink class="button" to="trap">trap</NuxtLink> -->
     </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 @use "styles/main" as *;
 .overlay {
-  background: url("../assets/pictures/lift-1.jpg") no-repeat;
+  background: url("../assets/pictures/pasje.jpg") no-repeat;
   width: 1500px;
   height: 1125px;
   z-index: 10;
@@ -34,4 +34,5 @@ export default {
       border-color: #0070ae;
     }
 }
+
 </style>
