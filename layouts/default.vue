@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-      <h1>Dit is de default layout</h1>
+    <h1>Dit is de default layout</h1>
+    <Nuxt />
   </div>
 </template>
 

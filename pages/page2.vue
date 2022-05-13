@@ -1,6 +1,7 @@
 <template>
   <ul>
-    <li><NuxtLink class="button" to="page2">go to page 2</NuxtLink></li>
+    <li><NuxtLink class="button" to="/">go to index</NuxtLink></li>
+    
   </ul>
 </template>
 
