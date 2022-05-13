@@ -1,8 +1,7 @@
 <template>
   <div class="overlay">
-    <NuxtLink class="button" to="kantine-koffie"></NuxtLink>
-    <NuxtLink class="up" to="rode-trap-verdieping-2"></NuxtLink>
-    <NuxtLink class="down" to="rode-trap-verdieping-0"></NuxtLink>
+    <NuxtLink class="button" to="lobby"></NuxtLink>
+    <NuxtLink class="up" to="rode-trap-verdieping-1"></NuxtLink>
   </div>
 </template>
 
@@ -15,7 +14,7 @@ export default {
 <style lang="scss" scoped>
 @use "styles/main" as *;
 .overlay {
-  background: url("../assets/pictures/verdieping-1.jpg") no-repeat;
+  background: url("../assets/pictures/verdieping-0.jpg") no-repeat;
   width: 1000px;
   height: 1333px;
   z-index: 10;
@@ -50,23 +49,6 @@ export default {
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-bottom: 100px solid #0070ae;
-  }
-}
-
-.down {
-  position: absolute;
-  display: block;
-  top: 400px;
-  left: 100px;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 100px solid #630e9e;
-  &:hover {
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid #0070ae;
   }
 }
 </style>
