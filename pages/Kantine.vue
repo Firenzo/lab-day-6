@@ -1,30 +1,29 @@
 <template>
     <div class="overlay">
-      <NuxtLink class="button" to="page3"></NuxtLink>
+      <NuxtLink class="button" to=""></NuxtLink>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
-  name: "IndexPage",
+  name: "KantinePage",
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "styles/main" as *;
 .overlay {
-  background: url("../assets/pictures/ingang.jpg") no-repeat;
+  background: url("../assets/pictures/kanitne-4.jpg") no-repeat;
   width: 1500px;
   height: 1125px;
   z-index: 10;
   position: absolute;
   font-family: sans-serif;
 }
-.button {
+.button1 {
   position: relative;
     top: 630px;
-    left: 850px;
+    left: 510px;
     display: block;
     background-color: transparent;
     width: 50px;
