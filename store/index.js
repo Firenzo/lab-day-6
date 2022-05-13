@@ -31,7 +31,6 @@ export const state = () => ({
     {name: "Stijn", gender: "M"},
     {name: "Thijs", gender: "M"},
     {name: "Tijmen", gender: "M"},
-    {name: "Ryan", gender: "M"},
     {name: "WeShi", gender: "F"},
     {name: "Yingdi", gender: "M"},
     {name: "Yonas", gender: "M"},
