@@ -2,7 +2,6 @@
     <div class="overlay">
       <NuxtLink class="button" to="page3"></NuxtLink>
     </div>
-  </div>
 </template>
 
 <script>
