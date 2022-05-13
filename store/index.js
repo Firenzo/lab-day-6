@@ -45,7 +45,7 @@ export const state = () => ({
     },
     {
       id: 2,
-      title: "Ga op zoek naar Amber en vraag voor salarisverhoging."
+      title: "Ga op zoek naar Amber om kennis te maken."
     },
     {
       id: 3,
@@ -58,7 +58,7 @@ export const state = () => ({
     }
   ],
 
-  currentObjective: undefined,
+  currentObjective: 1,
 })
   
 export const mutations = {
@@ -66,8 +66,12 @@ export const mutations = {
     state.chosenCharacter = selectedCharacter;
   },
 
-  SET_CURRENT_OBJECTIVE(state, index) {
-    state.chosenCharacter = state.characters[index]
+  SET_CURRENT_OBJECTIVE(state, {currentObjective}) {
+    state.currentObjective = currentObjective
+  },
+
+  ACQUIRE_PASJE(state) {
+    state.objectives[0].acquiredPasje = true;
   }
 }
   
@@ -76,8 +80,12 @@ export const actions = {
     context.commit('SET_CHOSEN_CHARACTER', {selectedCharacter: selectedCharacter});
   },
 
-  changeCurrentObjective (context) {
-    context.commit('SET_CURRENT_OBJECTIVE');
+  acquirePasje(context) {
+    context.commit('ACQUIRE_PASJE');
+  },
+
+  changeCurrentObjective (context, {currentObjective}) {
+    context.commit('SET_CURRENT_OBJECTIVE', {currentObjective: currentObjective});
   },
 }
   
