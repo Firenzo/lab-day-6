@@ -11,7 +11,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use "styles/main" as *;
 .overlay {
   background: url("../assets/pictures/ingang.jpg") no-repeat;
