@@ -1,8 +1,8 @@
 <template>
     <div class="overlay">
       <NuxtLink class="button1" to="kantine"></NuxtLink>
-      <NuxtLink class="button2" to="2nd-floor"></NuxtLink>
-      <NuxtLink class="button3" to="3rd-floor"></NuxtLink>
+      <NuxtLink class="button2" to="academy"></NuxtLink>
+      <NuxtLink class="button3" to="dcx"></NuxtLink>
       <NuxtLink class="button4" to="4th-floor"></NuxtLink>
     </div>
 </template>
