@@ -1,6 +1,6 @@
 <template>
   <div class="overlay">
-    <NuxtLink class="back" to="verdieping-3"></NuxtLink>
+    <NuxtLink class="back" to="dcx-3"></NuxtLink>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 @use "styles/main" as *;
 .overlay {
-  background: url("../assets/pictures/koffie-slecht-1.jpg") no-repeat;
+  background: url("../assets/pictures/amber.jpg") no-repeat;
   width: 1000px;
   height: 1333px;
   z-index: 10;
@@ -38,8 +38,8 @@ export default {
 }
 .button {
   position: relative;
-  top: 570px;
-  left: 490px;
+  top: 540px;
+  left: 570px;
   display: block;
   background-color: transparent;
   width: 50px;
