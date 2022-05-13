@@ -1,5 +1,6 @@
 <template>
     <div class="overlay">
+      <NuxtLink class="button0" to="lobby"></NuxtLink>
       <NuxtLink class="button1" to="kantine"></NuxtLink>
       <NuxtLink class="button2" to="academy-1"></NuxtLink>
       <NuxtLink class="button3" to="dcx"></NuxtLink>
@@ -23,9 +24,23 @@ export default {
   position: absolute;
   font-family: sans-serif;
 }
+.button0 {
+  position: relative;
+    top: 730px;
+    left: 515px;
+    display: block;
+    background-color: transparent;
+    width: 50px;
+    height: 80px;
+    border: 4px solid #630e9e;
+
+    &:hover {
+      border-color: #0070ae;
+    }
+}
 .button1 {
   position: relative;
-    top: 630px;
+    top: 540px;
     left: 510px;
     display: block;
     background-color: transparent;
@@ -39,7 +54,7 @@ export default {
 }
 .button2 {
   position: relative;
-    top: 440px;
+    top: 350px;
     left: 510px;
     display: block;
     background-color: transparent;
@@ -53,7 +68,7 @@ export default {
 }
 .button3 {
   position: relative;
-    top: 250px;
+    top: 150px;
     left: 510px;
     display: block;
     background-color: transparent;
@@ -67,8 +82,8 @@ export default {
 }
 .button4 {
   position: relative;
-    top: 30px;
-    left: 510px;
+    top: -60px;
+    left: 505px;
     display: block;
     background-color: transparent;
     width: 50px;
