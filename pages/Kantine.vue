@@ -19,19 +19,4 @@ export default {
   position: absolute;
   font-family: sans-serif;
 }
-.button1 {
-  position: relative;
-    top: 630px;
-    left: 510px;
-    display: block;
-    background-color: transparent;
-    width: 50px;
-    height: 80px;
-    border: 4px solid #630e9e;
-
-    &:hover {
-      border-color: #0070ae;
-    }
-}
-
 </style>

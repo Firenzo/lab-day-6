@@ -3,7 +3,7 @@
       <NuxtLink class="button1" to="kantine"></NuxtLink>
       <NuxtLink class="button2" to="academy-1"></NuxtLink>
       <NuxtLink class="button3" to="dcx"></NuxtLink>
-      <NuxtLink class="button4" to="Forbidden"></NuxtLink>
+      <NuxtLink class="button4" to="forbidden"></NuxtLink>
     </div>
 </template>
 

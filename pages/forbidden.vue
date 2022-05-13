@@ -17,61 +17,8 @@ img {
   display: block;
   margin: auto;
 }
-.button1 {
-  position: relative;
-    top: 630px;
-    left: 510px;
-    display: block;
-    background-color: transparent;
-    width: 50px;
-    height: 80px;
-    border: 4px solid #630e9e;
-
-    &:hover {
-      border-color: #0070ae;
-    }
-}
-.button2 {
-  position: relative;
-    top: 440px;
-    left: 510px;
-    display: block;
-    background-color: transparent;
-    width: 50px;
-    height: 80px;
-    border: 4px solid #630e9e;
-
-    &:hover {
-      border-color: #0070ae;
-    }
-}
-.button3 {
-  position: relative;
-    top: 250px;
-    left: 510px;
-    display: block;
-    background-color: transparent;
-    width: 50px;
-    height: 80px;
-    border: 4px solid #630e9e;
-
-    &:hover {
-      border-color: #0070ae;
-    }
-}
-.button4 {
-  position: relative;
-    top: 30px;
-    left: 510px;
-    display: block;
-    background-color: transparent;
-    width: 50px;
-    height: 80px;
-    border: 4px solid #630e9e;
-
-    &:hover {
-      border-color: #0070ae;
-    }
+h1 {
+  text-align: center;
 }
 
 </style>
