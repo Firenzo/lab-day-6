@@ -25,14 +25,14 @@ export default {
   position: absolute;
   display: block;
   top: 500px;
-  left: 50px;
+  left: 850px;
   width: 0;
   height: 0;
-  border-right: 100px solid #630e9e;
+  border-left: 100px solid #630e9e;
   border-bottom: 50px solid transparent;
   border-top: 50px solid transparent;
     &:hover {
-      border-right: 100px solid #0070ae;
+      border-left: 100px solid #0070ae;
       border-bottom: 50px solid transparent;
       border-top: 50px solid transparent;
   }

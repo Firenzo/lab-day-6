@@ -1,7 +1,6 @@
 <template>
     <div class="overlay">
-      <img class="char__pic" :src="require(`~/assets/images/characters/${$store.state.characters[17].name}.png`)"/>
-      <NuxtLink class="button" to="lobby"></NuxtLink>
+      <!-- <NuxtLink class="button" to="trap">trap</NuxtLink> -->
     </div>
 </template>
 
@@ -14,26 +13,21 @@ export default {
 <style lang="scss" scoped>
 @use "styles/main" as *;
 .overlay {
-  background: url("../assets/pictures/pasje.jpg") no-repeat;
-  width: 1000px;
-  height: 1333px;
+  background: url("../assets/pictures/trap.jpg") no-repeat;
+  width: 1500px;
+  height: 1125px;
   z-index: 10;
   position: absolute;
   font-family: sans-serif;
 }
-.char__pic {
-  position: relative;
-    top: 510px;
-    left: 340px;
-}
 .button {
   position: relative;
-    top: 120px;
-    left: 230px;
+    top: 630px;
+    left: 850px;
     display: block;
     background-color: transparent;
-    width: 600px;
-    height: 400px;
+    width: 50px;
+    height: 80px;
     border: 4px solid #630e9e;
 
     &:hover {

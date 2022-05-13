@@ -31,12 +31,33 @@ export const state = () => ({
     {name: "Stijn", gender: "M"},
     {name: "Thijs", gender: "M"},
     {name: "Tijmen", gender: "M"},
-    {name: "Ryan", gender: "M"},
     {name: "WeShi", gender: "F"},
     {name: "Yingdi", gender: "M"},
     {name: "Yonas", gender: "M"},
   ],
   chosenCharacter: undefined,
+
+  objectives: [
+    {
+      id: 1,
+      acquiredPasje: false,
+      title: "Ga naar de Academy om je kennis uit te breiden.",
+    },
+    {
+      id: 2,
+      title: "Ga op zoek naar Amber en vraag voor salarisverhoging."
+    },
+    {
+      id: 3,
+      title: "Door al je harde werk val je bijna in slaap. Ga op zoek naar goede koffie.",
+      fail: "koffie-fail"
+    },
+    {
+      id: 4,
+      title: "Ga naar de wc."
+    }
+  ],
+
   currentObjective: undefined,
 })
   
@@ -51,11 +72,12 @@ export const mutations = {
 }
   
 export const actions = {
-  changeChosenCharacter (context){
-    context.commit('SET_CHOSEN_CHARACTER', {selectedCharacter: 2});
+  changeChosenCharacter (context, {selectedCharacter}){
+    context.commit('SET_CHOSEN_CHARACTER', {selectedCharacter: selectedCharacter});
   },
+
   changeCurrentObjective (context) {
-    context.commit('SET_CURRENT_OBJECTIVE')
+    context.commit('SET_CURRENT_OBJECTIVE');
   },
 }
   
