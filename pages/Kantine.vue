@@ -1,5 +1,7 @@
 <template>
-  <div class="overlay"></div>
+  <div class="overlay">
+    <NuxtLink class="button" to="koffie-lekker"></NuxtLink>
+  </div>
 </template>
 
 <script>
@@ -17,5 +19,19 @@ export default {
   z-index: 10;
   position: absolute;
   font-family: sans-serif;
+}
+.button {
+  position: relative;
+  top: 200px;
+  left: 150px;
+  display: block;
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 4px solid #630e9e;
+
+  &:hover {
+    border-color: #0070ae;
+  }
 }
 </style>
