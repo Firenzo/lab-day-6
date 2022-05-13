@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <h1>Choose your character</h1>
-    <button @click="prevPerson()" class="char__button">Previous</button>
-    <!-- <img :src=" true && `_nuxt/assets/images/characters/${characters[currentPerson].name}.png`"/> -->
-    <img :src="require(`~/assets/images/characters/${characters[currentPerson].name}.png`)">
-    <button @click="nextPerson()"  class="char__button">Next</button>
-    <h2 class="char__name"></h2>
-    <ul>
-      <li><NuxtLink class="button" to="page2">Start</NuxtLink></li>
-    </ul>
+  <div class="char">
+    <h1 class="char__title">Choose your character</h1>
+    <img class="char__pic" :src="require(`~/assets/images/characters/${characters[currentPerson].name}.png`)">
+    <h2 class="char__name">{{characters[currentPerson].name}}</h2>
+    <div class="char__button-container">
+      <button class="char__button-prev" @click="prevPerson()"></button>
+      <NuxtLink class="char__button-start" to="page2">Start</NuxtLink>
+      <button class="char__button-next" @click="nextPerson()"></button>
+    </div>
+    
   </div>
 </template>
 
@@ -91,7 +91,64 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.char__button {
-  color: red;
-}
+  .char {
+    background-color: #0070ad;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    &__title {
+      padding-top: 50px;
+      text-align: center;
+      font-size: 40px;
+      display: block;
+    }
+
+    &__pic {
+      height: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__name {
+      font-size: 40px;
+      text-align: center;
+    }
+    
+    &__button-container {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 40px;
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    &__button-prev {
+      transform: translate(0px, -300px);
+      width: 0;
+      height: 0;
+      border-top: 50px solid #0070ad;
+      border-right: 100px solid red;
+      border-bottom: 50px solid #0070ad;
+    }
+    &__button-start{
+            color: black;
+      text-decoration: none;
+      width: 200px;
+      text-align: center;
+      background-color: #f1f1f1;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+      display: block;
+    }
+    &__button-next {
+      transform: translate(0px, -300px);
+      width: 0;
+      height: 0;
+      border-top: 50px solid #0070ad;
+      border-left: 100px solid red;
+      border-bottom: 50px solid #0070ad;
+    }
+  }
 </style>
