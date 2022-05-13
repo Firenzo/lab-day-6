@@ -1,7 +1,7 @@
 <template>
     <div class="overlay">
       <NuxtLink class="button to-reception" to="pasje"></NuxtLink>
-      <NuxtLink class="button to-stairs" to="trap"></NuxtLink>
+      <NuxtLink class="button to-stairs" to="verdieping-0"></NuxtLink>
       <NuxtLink class="button to-elevator" to="lift"></NuxtLink>
     </div>
 </template>
