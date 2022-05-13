@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 @use "styles/main" as *;
 .overlay {
-  background: url("../assets/pictures/trapjpg.jpg") no-repeat;
+  background: url("../assets/pictures/trap.jpg") no-repeat;
   width: 1500px;
   height: 1125px;
   z-index: 10;
