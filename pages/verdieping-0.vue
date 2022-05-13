@@ -1,6 +1,6 @@
 <template>
     <div class="overlay">
-      <NuxtLink class="button" to="page3"></NuxtLink>
+      <NuxtLink class="button" to="lobby"></NuxtLink>
       <NuxtLink class="up" to="verdieping-1"></NuxtLink>
     </div>
 </template>
