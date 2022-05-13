@@ -1,6 +1,6 @@
 <template>
   <div class="overlay">
-    <NuxtLink class="back" to="dcx"></NuxtLink>
+    <NuxtLink class="back" to="dcx-koffie"></NuxtLink>
     <NuxtLink class="button" to="amber"></NuxtLink>
   </div>
 </template>
@@ -14,7 +14,7 @@ export default {
 <style lang="scss" scoped>
 @use "styles/main" as *;
 .overlay {
-  background: url("../assets/pictures/dcx-1.jpg") no-repeat;
+  background: url("../assets/pictures/dcx-3.jpg") no-repeat;
   width: 1000px;
   height: 1333px;
   z-index: 10;
@@ -25,7 +25,7 @@ export default {
   position: absolute;
   display: block;
   top: 500px;
-  left: 50px;
+  left: 300px;
   width: 0;
   height: 0;
   border-right: 100px solid #630e9e;
@@ -39,12 +39,12 @@ export default {
 }
 .button {
   position: relative;
-  top: 540px;
-  left: 570px;
+  top: 460px;
+  left: 480px;
   display: block;
   background-color: transparent;
   width: 50px;
-  height: 80px;
+  height: 200px;
   border: 4px solid #630e9e;
 
   &:hover {
