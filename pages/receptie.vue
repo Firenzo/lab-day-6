@@ -1,11 +1,8 @@
 <template>
     <div class="overlay">
-    <img
-      class="char__pic"
-      :src="require(`~/assets/images/characters/${$store.state.characters[17].name}.png`)"/>
+      <img class="char__pic" :src="require(`~/assets/images/characters/${$store.state.characters[17].name}.png`)"/>
       <NuxtLink class="button" to="lobby"></NuxtLink>
     </div>
-  </div>
 </template>
 
 <script>
