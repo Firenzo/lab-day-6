@@ -1,7 +1,6 @@
 <template>
     <div class="overlay">
-    
-      <button>Klik hier</button>
+      <NuxtLink class="button" to="page3"></NuxtLink>
     </div>
   </div>
 </template>
@@ -15,12 +14,26 @@ export default {
 <style lang="scss">
 @use "styles/main" as *;
 .overlay {
-  background: url("../assets/images/background-living.png") no-repeat;
-  width: 1000px;
-  height: 1000px;
-  /* opacity: 0; */
+  background: url("../assets/pictures/ingang.jpg") no-repeat;
+  width: 1500px;
+  height: 1125px;
   z-index: 10;
   position: absolute;
   font-family: sans-serif;
 }
+.button {
+  position: relative;
+    top: 630px;
+    left: 850px;
+    display: block;
+    background-color: transparent;
+    width: 50px;
+    height: 80px;
+    border: 4px solid #630e9e;
+
+    &:hover {
+      border-color: #0070ae;
+    }
+}
+
 </style>

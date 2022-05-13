@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <div class="wrap">
-      <h1>Dit is de default layout</h1>
-      <Nuxt />
-    </div>
+    <Nuxt />
   </div>
 </template>
 
@@ -28,7 +25,8 @@ export default {
 <style lang="scss">
 @use "styles/main" as *;
 #app {
-  width: 1000px;
+  position: relative;
+  width: 1500px;
   margin: auto;
 }
 h1 {
