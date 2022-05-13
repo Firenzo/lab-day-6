@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <div class="objective">
+      <h2>{{$store.state.objectives[$store.state.currentObjective -1].title}}</h2>
+    </div>
     <Nuxt />
   </div>
 </template>
@@ -22,7 +25,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use "styles/main" as *;
 #app {
   position: relative;
@@ -30,6 +33,10 @@ export default {
   margin: auto;
 }
 h1 {
+  font-family: sans-serif;
+}
+
+h2{
   font-family: sans-serif;
 }
 </style>

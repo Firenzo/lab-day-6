@@ -1,13 +1,26 @@
 <template>
     <div class="overlay">
       <img class="char__pic" :src="require(`~/assets/images/characters/${$store.state.characters[$store.state.chosenCharacter].name}.png`)"/>
-      <NuxtLink class="button" to="lobby"></NuxtLink>
+      <NuxtLink class="button" to="lobby" @click.native="acquirePasje()"></NuxtLink>
     </div>
 </template>
 
 <script>
 export default {
-  name: "IndexPage",
+
+  data: () => ({
+  }),
+
+  computed: {},
+
+  mounted() {},
+
+  methods: {
+    acquirePasje() {
+      this.$store.dispatch('acquirePasje');
+      this.$store.dispatch('changeCurrentObjective', {currentObjective: 2});
+    }
+  },
 };
 </script>
 
@@ -27,14 +40,15 @@ export default {
     top: 510px;
     left: 340px;
 }
+
 .button {
   position: relative;
-    top: 630px;
-    left: 850px;
+    top: 120px;
+    left: 230px;
     display: block;
     background-color: transparent;
-    width: 50px;
-    height: 80px;
+    width: 600px;
+    height: 400px;
     border: 4px solid #630e9e;
 
     &:hover {
