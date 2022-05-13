@@ -2,7 +2,6 @@
     <div class="overlay">
       <NuxtLink class="back" to="academy-1"></NuxtLink>
     </div>
-  </div>
 </template>
 
 <script>

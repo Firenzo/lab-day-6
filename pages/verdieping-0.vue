@@ -3,7 +3,6 @@
       <NuxtLink class="button" to="page3"></NuxtLink>
       <NuxtLink class="up" to="verdieping-1"></NuxtLink>
     </div>
-  </div>
 </template>
 
 <script>

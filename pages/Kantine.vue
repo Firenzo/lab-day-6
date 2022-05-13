@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 @use "styles/main" as *;
 .overlay {
-  background: url("../assets/pictures/kanitne-4.jpg") no-repeat;
+  background: url("../assets/pictures/koffiecorner.jpg") no-repeat;
   width: 1500px;
   height: 1125px;
   z-index: 10;

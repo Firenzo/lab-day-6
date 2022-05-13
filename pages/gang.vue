@@ -3,7 +3,6 @@
       <NuxtLink class="up" to="Kantine"></NuxtLink>
       <NuxtLink class="down" to="verdieping-3"></NuxtLink>
     </div>
-  </div>
 </template>
 
 <script>
