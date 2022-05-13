@@ -1,6 +1,12 @@
 <template>
     <div class="overlay">
-      <NuxtLink class="button" to="page3"></NuxtLink>
+    <img
+      class="char__pic"
+      :src="
+        require(`~/assets/images/characters/Firenzo.png`)
+      "
+    />
+      <NuxtLink class="button" to="lobby"></NuxtLink>
     </div>
   </div>
 </template>
@@ -21,14 +27,19 @@ export default {
   position: absolute;
   font-family: sans-serif;
 }
+.char__pic {
+  position: relative;
+    top: 510px;
+    left: 340px;
+}
 .button {
   position: relative;
-    top: 630px;
-    left: 850px;
+    top: 120px;
+    left: 230px;
     display: block;
     background-color: transparent;
-    width: 50px;
-    height: 80px;
+    width: 600px;
+    height: 400px;
     border: 4px solid #630e9e;
 
     &:hover {
