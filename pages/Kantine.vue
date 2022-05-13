@@ -1,6 +1,5 @@
 <template>
     <div class="overlay">
-      <NuxtLink class="button" to=""></NuxtLink>
     </div>
 </template>
 

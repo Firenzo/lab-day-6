@@ -1,27 +1,21 @@
 <template>
-    <div class="overlay">
-      <NuxtLink class="button1" to="kantine"></NuxtLink>
-      <NuxtLink class="button2" to="academy"></NuxtLink>
-      <NuxtLink class="button3" to="dcx"></NuxtLink>
-      <NuxtLink class="button4" to="Forbidden"></NuxtLink>
+    <div>
+      <h1>Go back to where you WERE</h1>
+      <img src="../assets/pictures/verboden-toegang.jpg" />
     </div>
 </template>
 
 <script>
 export default {
-  name: "LiftPage",
+  name: "ForbiddenPage",
 };
 </script>
 
 <style lang="scss" scoped>
 @use "styles/main" as *;
-.overlay {
-  background: url("../assets/pictures/lift-1.jpg") no-repeat;
-  width: 1500px;
-  height: 1125px;
-  z-index: 10;
-  position: absolute;
-  font-family: sans-serif;
+img {
+  display: block;
+  margin: auto;
 }
 .button1 {
   position: relative;
