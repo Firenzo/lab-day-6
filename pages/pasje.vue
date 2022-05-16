@@ -18,7 +18,6 @@ export default {
   methods: {
     acquirePasje() {
       this.$store.dispatch('acquirePasje');
-      this.$store.dispatch('changeCurrentObjective', {currentObjective: 2});
     }
   },
 };

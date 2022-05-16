@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="objective">
-      <h2>{{$store.state.objectives[$store.state.currentObjective -1].title}}</h2>
+      <h2 v-if="$store.state.chosenCharacter">{{$store.state.objectives[$store.state.currentObjective -1].title}}</h2>
     </div>
     <Nuxt />
   </div>

@@ -6,7 +6,11 @@
 
 <script>
 export default {
-  name: "DcxPage",
+  mounted(){
+    if(this.$store.state.currentObjective === 3 ) {
+      this.$store.dispatch('changeCurrentObjective', {currentObjective: 4});
+    }
+  }
 };
 </script>
 

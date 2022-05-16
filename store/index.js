@@ -54,8 +54,8 @@ export const state = () => ({
     },
     {
       id: 4,
-      title: "Ga naar de wc."
-    }
+      title: "Gefeliciteerd, je bent nu ingewerkt!"
+    },
   ],
 
   currentObjective: 1,

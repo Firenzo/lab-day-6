@@ -6,7 +6,11 @@
 
 <script>
 export default {
-  name: "IndexPage",
+  mounted(){
+    if(this.$store.state.currentObjective === 1 ) {
+      this.$store.dispatch('changeCurrentObjective', {currentObjective: 2});
+    }
+  }
 };
 </script>
 
